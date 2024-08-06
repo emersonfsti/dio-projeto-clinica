@@ -96,12 +96,22 @@ body {
     margin-bottom: 50px;
     margin-left: 30px;
     line-height: 1.6;
+    text-align: justify; /* Alinhamento do texto justificado */
+    margin: 0 0 20px; /* Margem inferior entre os parágrafos */
 }
 
 .content h2 {
     overflow: hidden;
     margin-bottom: 20px;
     line-height: 1.6;
+}
+
+.content iframe {
+    border: 0;
+    border-radius: 8px; /* Borda arredondada para o iframe */
+    margin: 20px 0; /* Margem superior e inferior para o iframe */
+    width: 100%;
+    height: 300px;
 }
 
 h1 {
@@ -152,4 +162,43 @@ th {
 
 td {
     background-color: #f9f9f9;
+}
+
+form{
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: #007bff; /* Azul para os botões */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px; /* Espaço entre os botões */
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
 }
